@@ -23,6 +23,7 @@ export default function Page() {
                 <li>Javascript</li>
                 <li>ReactJS (for CMS) & NextJS (for landing page)</li>
                 <li>PHP & Laravel</li>
+                <li>ChartJS</li>
                 <li>MySQL</li>
                 <li>Git</li>
               </ul>
