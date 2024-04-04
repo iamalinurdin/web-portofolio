@@ -146,6 +146,28 @@ export default function Home() {
             </ScrollShadow>
           </div>
         </section>
+        <section className="p-24">
+          <div className="container">
+            <SectionTitle>Clients</SectionTitle>
+            <div className="grid grid-cols-6 gap-10">
+              <div className="col-span-1">
+                <div className="relative w-full h-[75px]">
+                  <Image src={'/mizan-amanah-logo.png'} fill alt="Mizan Amanah Logo" className="absolute" />
+                </div>
+              </div>
+              <div className="col-span-1">
+                <div className="relative w-full h-[75px]">
+                  <Image src={'/mizan-amanah-logo.png'} fill alt="SDIT Tazkiya Logo" className="absolute" />
+                </div>
+              </div>
+              <div className="col-span-1">
+                <div className="relative w-full h-[75px]">
+                  <Image src={'/mizan-amanah-logo.png'} fill alt="Best Franchise Logo" className="absolute" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );
