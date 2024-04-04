@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import ProjectItem from "@/components/ProjectItem";
+import SectionTitle from "@/components/SectionTitle";
 
 export default function Page() {
   return (
@@ -7,6 +8,7 @@ export default function Page() {
       <Header />
       <section className="p-24">
         <div className="container">
+          <SectionTitle text="Here all my projects I've done">Projects</SectionTitle>
           <div className="grid grid-cols-3 gap-5">
             <div className="col-span-1">
               <ProjectItem 

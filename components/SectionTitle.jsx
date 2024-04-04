@@ -1,7 +1,10 @@
-export default function SectionTitle({children}) {
+import React from "react";
+
+export default function SectionTitle({children, text = ''}) {
   return (
-    <h1 className="text-center text-4xl font-bold">
-      {children}
-    </h1>
+    <div className="mb-10 text-center">
+      <h1 className="text-4xl font-bold">{children}</h1>
+      <p className="text-xl mt-5">{text}</p>
+    </div>
   )
 }
