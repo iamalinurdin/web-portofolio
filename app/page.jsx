@@ -8,6 +8,7 @@ import Image from "next/image";
 import SectionTitle from "@/components/SectionTitle";
 import CareerTimeline from "@/components/CareerTimeline";
 import ProjectItem from "@/components/ProjectItem";
+import ClientImage from "@/components/ClientImage";
 
 export default function Home() {
   const text = 'Hello, I am Ali, a Fullstack Web Developer.'.split(' ')
@@ -16,11 +17,11 @@ export default function Home() {
     <>
       <Header />
       <main>
-        <section className="p-24 h-screen">
-          <div className="container h-full flex justify-center">
-            <div className="grid grid-cols-2 gap-5 items-center">
+        <section className="p-6 md:p-24 h-screen">
+          <div className="md:container h-full flex justify-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
               <div className="col-span-1">
-                <h1 className="text-6xl font-bold">
+                <h1 className="text-5xl md:text-6xl font-bold">
                   {text.map((item, idx) => (
                     <motion.span 
                       whileHover={{
@@ -51,19 +52,19 @@ export default function Home() {
               <div className="col-span-1">
                 <Logo />
               </div>
-              <div className="col-span-2">
+              {/* <div className="col-span-2">
                 <div className="text-center">
                   <p className="w-1/2 mx-auto text-lg mt-20">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                   <Button className="mt-20" color="primary" variant="flat" size="lg">Download CV</Button>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
-        <section className="p-24">
-          <div className="container">
+        <section className="p-6 md:p-24">
+          <div className="md:container">
             <SectionTitle>Projects Overview</SectionTitle>
-            <div className="grid grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               <div className="col-span-1">
                 <ProjectItem 
                   name={'Best Franchise'}
@@ -91,10 +92,10 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="p-24">
-          <div className="container">
+        <section className="p-6 md:p-24">
+          <div className="md:container">
             <SectionTitle>Career Summary</SectionTitle>
-            <ScrollShadow className="w-full md:w-1/2 h-[600px] mx-auto" hideScrollBar>
+            <ScrollShadow className="w-full lg:w-1/2 h-[600px] mx-auto" hideScrollBar>
               <div className="grid grid-cols-1 gap-5">
                 <div className="col-span-1">
                   <CareerTimeline 
@@ -146,24 +147,18 @@ export default function Home() {
             </ScrollShadow>
           </div>
         </section>
-        <section className="p-24">
-          <div className="container">
+        <section className="p-6 md:p-24">
+          <div className="md:container">
             <SectionTitle>Clients</SectionTitle>
-            <div className="grid grid-cols-6 gap-10">
-              <div className="col-span-1">
-                <div className="relative w-full h-[75px]">
-                  <Image src={'/mizan-amanah-logo.png'} fill alt="Mizan Amanah Logo" className="absolute" />
-                </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10">
+              <div className="col-span-1 flex justify-center">
+                <ClientImage source={'/mizan-amanah-logo.png'} alt={'Mizan Amanah Logo'} />
               </div>
-              <div className="col-span-1">
-                <div className="relative w-full h-[75px]">
-                  <Image src={'/mizan-amanah-logo.png'} fill alt="SDIT Tazkiya Logo" className="absolute" />
-                </div>
+              <div className="col-span-1 flex justify-center">
+                <ClientImage source={'/tazkiya-logo.png'} alt={'SDIT Tazkiya Logo'} />
               </div>
-              <div className="col-span-1">
-                <div className="relative w-full h-[75px]">
-                  <Image src={'/mizan-amanah-logo.png'} fill alt="Best Franchise Logo" className="absolute" />
-                </div>
+              <div className="col-span-1 flex justify-center">
+                <ClientImage source={'/besbrend-logo.png'} alt={'Best Franchise Logo'} />
               </div>
             </div>
           </div>

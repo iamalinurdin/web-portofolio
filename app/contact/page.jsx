@@ -10,12 +10,11 @@ export default function Page() {
     <>
       <Header />
       <main>
-        <section className="p-24">
-          <div className="container">
-            <div className="grid grid-cols-2 gap-5">
+        <section className="p-6 md:p-24">
+          <div className="md:container">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
               <div className="col-span-1">
-                <SectionTitle>Contact</SectionTitle>
-                <p className="mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis tempore molestias quisquam magnam illo repellat assumenda repudiandae labore impedit amet. Perspiciatis quia totam incidunt voluptatum fuga vitae, nostrum eum, ipsa laudantium necessitatibus repellat quo voluptatibus, ipsam nemo nulla tempore officiis aliquid aperiam aliquam cumque. Dolore, voluptatibus culpa. Delectus nobis neque exercitationem recusandae. Illum libero quos similique doloremque sit itaque. Quis officiis, libero dolor iusto odit illum nam cumque adipisci quia eos a doloremque? Quibusdam, repudiandae nihil velit ratione eveniet in, natus dolores id et, est eius corporis odit vero at! Corrupti consequatur nihil tenetur ad expedita ea nesciunt voluptates odio!</p>
+                <SectionTitle text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis tempore molestias quisquam magnam illo repellat assumenda repudiandae labore impedit amet. Perspiciatis quia totam incidunt voluptatum fuga vitae, nostrum eum, ipsa laudantium necessitatibus repellat quo voluptatibus, ipsam nemo nulla tempore officiis aliquid aperiam aliquam cumque. Dolore, voluptatibus culpa. Delectus nobis neque exercitationem recusandae. Illum libero quos similique doloremque sit itaque. Quis officiis, libero dolor iusto odit illum nam cumque adipisci quia eos a doloremque? Quibusdam, repudiandae nihil velit ratione eveniet in, natus dolores id et, est eius corporis odit vero at! Corrupti consequatur nihil tenetur ad expedita ea nesciunt voluptates odio!">Contact</SectionTitle>
                 <ul className="mt-10 flex justify-between">
                   <li>
                     <Link href="https://www.instagram.com/iamalinurdin.porto" className="flex gap-2">
