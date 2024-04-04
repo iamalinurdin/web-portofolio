@@ -31,3 +31,40 @@ body {
     text-wrap: balance;
   }
 } */
+
+.border-gradient-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.border-gradient-animation::before {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 200%;
+  background: linear-gradient(90deg, #00CCFF 0%, #6c00d4 50%);
+  animation: border-animation 4s linear infinite;
+  margin: 0 auto;
+}
+
+.border-gradient-animation::after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  background: transparent;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+@keyframes border-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
